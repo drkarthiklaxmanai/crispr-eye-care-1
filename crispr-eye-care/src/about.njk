@@ -1,1 +1,148 @@
+---
+layout: layouts/base.njk
+title: About Dr. Rajeswari Thangavel | AIIMS-Trained Ophthalmologist in KK Nagar, Chennai
+metaDescription: Learn about Dr. Rajeswari Thangavel, AIIMS-trained ophthalmologist at Crispr Eye Care, KK Nagar, Chennai. Specializing in Cataract, LASIK, Medical Retina, Squint, and Neuro-ophthalmology with years of clinical experience.
+---
 
+{% import "components/icons.njk" as icons %}
+
+{% block content %}
+
+<section class="pt-24 pb-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <!-- Doctor Photo -->
+      <div class="aspect-square bg-zinc-100 rounded-3xl overflow-hidden shadow-2xl">
+        <!-- Replace with real professional photo of Dr. Rajeswari -->
+        <div class="w-full h-full bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-white text-9xl">
+          👩‍⚕️
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div>
+        <h1 class="text-5xl font-bold heading mb-6">Dr. Rajeswari Thangavel</h1>
+        <p class="text-emerald-600 font-medium text-xl mb-8">AIIMS-Trained Ophthalmologist</p>
+        
+        <p class="text-lg text-zinc-600 leading-relaxed mb-8">
+          Dr. Rajeswari Thangavel is a highly qualified ophthalmologist with extensive clinical experience from AIIMS, New Delhi. 
+          She specializes in advanced eye care with a strong focus on ethical, evidence-based treatment and patient-centered care.
+        </p>
+
+        <div class="flex items-center gap-6 text-sm mb-10">
+          <div class="flex items-center gap-2">
+            {{ icons.icon("shield", "6") }}
+            <span>AIIMS Alumni</span>
+          </div>
+          <div class="flex items-center gap-2">
+            {{ icons.icon("calendar", "6") }}
+            <span>10+ Years Experience</span>
+          </div>
+        </div>
+
+        <a href="/contact" 
+           class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-600 text-white font-semibold rounded-2xl hover:bg-emerald-700 transition">
+          Book Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Qualifications & Experience -->
+<section class="py-20 bg-zinc-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold heading text-center mb-12">Qualifications & Experience</h2>
+    
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="font-semibold text-2xl mb-6">Education & Training</h3>
+        <ul class="space-y-6 text-zinc-600">
+          <li class="flex gap-4">
+            <span class="font-medium text-emerald-600">2025</span>
+            <div>Medical Retina Fellowship, Mahathma Eye Hospital, Trichy</div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-medium text-emerald-600">2022</span>
+            <div>FAICO (Neuro-ophthalmology), All India Collegium of Ophthalmology</div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-medium text-emerald-600">2017–2020</span>
+            <div>MD Ophthalmology, AIIMS, New Delhi</div>
+          </li>
+          <li class="flex gap-4">
+            <span class="font-medium text-emerald-600">2010–2016</span>
+            <div>MBBS, Coimbatore Medical College</div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-2xl mb-6">Professional Experience</h3>
+        <ul class="space-y-6 text-zinc-600">
+          <li>
+            <strong>Consultant Ophthalmologist</strong><br>
+            Maxivision Eye Hospital, Chennai (Jan 2025 – Present)
+          </li>
+          <li>
+            <strong>Consultant Ophthalmologist</strong><br>
+            Vasan Eye Care (ASG Hospitals), Chennai (Oct 2023 – Dec 2024)
+          </li>
+          <li>
+            <strong>Senior Resident</strong><br>
+            AIIMS, New Delhi (2020 – 2023)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Specializations -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold heading text-center mb-12">Areas of Expertise</h2>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white border border-zinc-100 p-8 rounded-3xl">
+        {{ icons.icon("cataract", "8") }}
+        <h3 class="font-semibold text-xl mt-6 mb-3">Cataract Surgery</h3>
+        <p class="text-zinc-600">Advanced phacoemulsification and premium intraocular lens implantation.</p>
+      </div>
+      <div class="bg-white border border-zinc-100 p-8 rounded-3xl">
+        {{ icons.icon("lasik", "8") }}
+        <h3 class="font-semibold text-xl mt-6 mb-3">LASIK & Refractive Surgery</h3>
+        <p class="text-zinc-600">Safe laser correction for myopia, hyperopia, and astigmatism.</p>
+      </div>
+      <div class="bg-white border border-zinc-100 p-8 rounded-3xl">
+        {{ icons.icon("retina", "8") }}
+        <h3 class="font-semibold text-xl mt-6 mb-3">Medical Retina</h3>
+        <p class="text-zinc-600">Management of Diabetic Retinopathy and Age-related Macular Degeneration.</p>
+      </div>
+      <div class="bg-white border border-zinc-100 p-8 rounded-3xl">
+        {{ icons.icon("squint", "8") }}
+        <h3 class="font-semibold text-xl mt-6 mb-3">Squint (Strabismus) Surgery</h3>
+        <p class="text-zinc-600">Correction for both children and adults.</p>
+      </div>
+      <div class="bg-white border border-zinc-100 p-8 rounded-3xl">
+        {{ icons.icon("neuro", "8") }}
+        <h3 class="font-semibold text-xl mt-6 mb-3">Neuro-Ophthalmology</h3>
+        <p class="text-zinc-600">Diagnosis and treatment of optic nerve and brain-related vision disorders.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy -->
+<section class="py-20 bg-emerald-700 text-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold heading mb-8">Our Approach</h2>
+    <p class="text-xl leading-relaxed max-w-2xl mx-auto">
+      Visionary Care. Future Focused.<br><br>
+      At Crispr Eye Care, we believe in providing honest, ethical, and advanced eye care. 
+      Every patient receives personalized attention with the latest medical advancements — without unnecessary procedures.
+    </p>
+  </div>
+</section>
+
+{% endblock %}
