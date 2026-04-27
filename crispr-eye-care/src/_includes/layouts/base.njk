@@ -1,28 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ metaDescription or 'Crispr Eye Care - Advanced ethical eye care by Dr. Rajeswari Thangavel in KK Nagar, Chennai' }}">
   
-  <title>{{ title or 'Crispr Eye Care | Best Eye Clinic in KK Nagar, Chennai' }}</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{{ metaDescription | default('Crispr Eye Care - Advanced ethical eye care by Dr. Rajeswari Thangavel (AIIMS-trained) in KK Nagar, Chennai') }}">
+  <title>{{ title | default('Crispr Eye Care | Cataract & LASIK Specialist in KK Nagar, Chennai') }}</title>
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ metaDescription }}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com{{ page.url | default('/') }}">
 
+  <!-- Tailwind CSS -->
   <link href="/assets/css/tailwind.css" rel="stylesheet">
+  
+  <!-- Font Awesome for WhatsApp icon etc. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-    body { font-family: 'Inter', system_ui, sans-serif; }
-    .heading { font-family: 'Space Grotesk', sans-serif; }
+    
+    body { 
+      font-family: 'Inter', system_ui, sans-serif; 
+    }
+    .heading { 
+      font-family: 'Space Grotesk', sans-serif; 
+    }
+    
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
-<body class="bg-zinc-50 text-zinc-900">
+<body class="bg-zinc-50 text-zinc-900 antialiased">
 
   {% include "components/navbar.njk" %}
 
@@ -30,8 +44,8 @@
 
   {% include "components/footer.njk" %}
 
+  <!-- Minimal JavaScript for subtle animations -->
   <script>
-    // Subtle scroll animations
     document.addEventListener('DOMContentLoaded', () => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -40,12 +54,16 @@
             entry.target.style.transform = 'translateY(0)';
           }
         });
-      }, { threshold: 0.1 });
+      }, { 
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+      });
 
-      document.querySelectorAll('section').forEach(section => {
+      // Animate all sections
+      document.querySelectorAll('section').forEach((section, index) => {
         section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'all 0.6s ease-out';
+        section.style.transform = 'translateY(40px)';
+        section.style.transition = `all ${0.5 + index * 0.1}s ease-out`;
         observer.observe(section);
       });
     });
