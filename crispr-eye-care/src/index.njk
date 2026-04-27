@@ -1,1 +1,220 @@
+---
+layout: layouts/base.njk
+title: Crispr Eye Care | Cataract & LASIK Specialist in KK Nagar, Chennai | Dr. Rajeswari
+metaDescription: Dr. Rajeswari Thangavel (AIIMS-trained ophthalmologist) offers advanced, ethical eye care at Crispr Eye Care, KK Nagar, Chennai. Painless cataract surgery, LASIK, retina care, squint & neuro-ophthalmology. Book appointment today.
+---
 
+{% import "components/icons.njk" as icons %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0 bg-[url('https://picsum.photos/id/1015/2000/1200')] bg-cover bg-center"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-900/80 to-transparent"></div>
+  
+  <div class="max-w-6xl mx-auto px-6 relative z-10 pt-20">
+    <div class="max-w-2xl">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm text-white mb-6">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+        AIIMS-Trained Ophthalmologist
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-bold heading leading-tight mb-6 text-white">
+        Clear Vision,<br><span class="text-emerald-300">Precise & Ethical Care</span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl mb-10 text-emerald-100 max-w-lg">
+        Dr. Rajeswari Thangavel provides compassionate, evidence-based eye care in KK Nagar, Chennai. 
+        No unnecessary procedures — only what’s best for your long-term vision health.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" 
+           class="group px-8 py-4 bg-white text-emerald-700 font-semibold rounded-2xl hover:bg-emerald-50 transition-all duration-300 flex items-center gap-3 text-lg shadow-lg hover:shadow-xl">
+          {{ icons.icon("calendar", "5") }}
+          Book Appointment
+        </a>
+        
+        <a href="https://wa.me/916381302828" target="_blank"
+           class="group px-8 py-4 border-2 border-white text-white font-semibold rounded-2xl hover:bg-white/10 transition-all duration-300 flex items-center gap-3 text-lg">
+          <i class="fab fa-whatsapp text-2xl"></i>
+          WhatsApp Now
+        </a>
+      </div>
+
+      <div class="mt-10 flex items-center gap-8 text-sm text-emerald-100">
+        <div>✅ Trusted by 1000+ patients</div>
+        <div>📍 KK Nagar, Chennai</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-9-9m0 0L5 14" />
+    </svg>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold heading text-center mb-4">Why Patients Trust Crispr Eye Care</h2>
+    <p class="text-center text-zinc-600 max-w-2xl mx-auto mb-16">
+      Ethical, evidence-based care by an AIIMS-trained specialist.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="group bg-white border border-zinc-100 hover:border-emerald-200 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        {{ icons.icon("shield", "8") }}
+        <h3 class="font-semibold text-2xl mt-6 mb-3">AIIMS-Trained Expertise</h3>
+        <p class="text-zinc-600">Deep clinical experience in complex eye conditions with highest medical standards.</p>
+      </div>
+
+      <div class="group bg-white border border-zinc-100 hover:border-emerald-200 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        {{ icons.icon("shield", "8") }}
+        <h3 class="font-semibold text-2xl mt-6 mb-3">No Unnecessary Surgery</h3>
+        <p class="text-zinc-600">Only evidence-based treatments after thorough and honest evaluation.</p>
+      </div>
+
+      <div class="group bg-white border border-zinc-100 hover:border-emerald-200 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        {{ icons.icon("calendar", "8") }}
+        <h3 class="font-semibold text-2xl mt-6 mb-3">Quick Recovery Focus</h3>
+        <p class="text-zinc-600">Modern techniques with minimal downtime and clear communication.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-24 bg-zinc-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold heading text-center mb-4">Our Eye Care Services</h2>
+    <p class="text-center text-zinc-600 max-w-xl mx-auto mb-16">
+      Comprehensive, advanced treatments delivered with precision and compassion.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="group bg-white p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="mb-6">{{ icons.icon("cataract", "8") }}</div>
+        <h3 class="font-semibold text-2xl mb-3">Cataract Surgery</h3>
+        <p class="text-zinc-600">Painless, stitchless phacoemulsification with premium intraocular lenses.</p>
+        <a href="/services/cataract" class="mt-6 text-emerald-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="group bg-white p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="mb-6">{{ icons.icon("lasik", "8") }}</div>
+        <h3 class="font-semibold text-2xl mb-3">LASIK & Refractive Surgery</h3>
+        <p class="text-zinc-600">Safe, precise laser vision correction for freedom from glasses.</p>
+        <a href="/services/lasik" class="mt-6 text-emerald-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="group bg-white p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="mb-6">{{ icons.icon("retina", "8") }}</div>
+        <h3 class="font-semibold text-2xl mb-3">Retina Care</h3>
+        <p class="text-zinc-600">Expert management of diabetic retinopathy and other retinal conditions.</p>
+        <a href="/services/retina" class="mt-6 text-emerald-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="group bg-white p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="mb-6">{{ icons.icon("squint", "8") }}</div>
+        <h3 class="font-semibold text-2xl mb-3">Squint Treatment</h3>
+        <p class="text-zinc-600">Evaluation and correction for children and adults.</p>
+        <a href="/services/squint" class="mt-6 text-emerald-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="group bg-white p-8 rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="mb-6">{{ icons.icon("neuro", "8") }}</div>
+        <h3 class="font-semibold text-2xl mb-3">Neuro-Ophthalmology</h3>
+        <p class="text-zinc-600">Diagnosis and treatment of optic nerve and brain-related vision issues.</p>
+        <a href="/services/neuro" class="mt-6 text-emerald-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Doctor -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-4xl font-bold heading mb-6">Meet Dr. Rajeswari Thangavel</h2>
+        <p class="text-lg text-zinc-600 leading-relaxed">
+          AIIMS-trained ophthalmologist with extensive experience in cataract, LASIK, retina, squint, and neuro-ophthalmology. 
+          Committed to ethical practice and delivering compassionate, patient-centered eye care in Chennai.
+        </p>
+        <a href="/about" class="mt-8 inline-flex items-center gap-2 text-emerald-600 font-medium hover:gap-3 transition">
+          View Full Profile →
+        </a>
+      </div>
+      
+      <div class="aspect-square bg-zinc-100 rounded-3xl overflow-hidden shadow-2xl">
+        <!-- Replace this with real photo of Dr. Rajeswari later -->
+        <div class="w-full h-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-9xl">
+          👩‍⚕️
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-24 bg-emerald-700 text-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold heading text-center mb-12">What Our Patients Say</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl">
+        <div class="flex mb-6 text-yellow-300">★★★★☆</div>
+        <p class="italic">"Dr. Rajeswari explained everything clearly. My cataract surgery was painless and my vision is now crystal clear."</p>
+        <p class="mt-8 font-medium">- Ramesh K, KK Nagar</p>
+      </div>
+      
+      <!-- Add more real testimonials here later -->
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section id="contact" class="py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-5xl font-bold heading mb-6">Restore Your Vision Today</h2>
+    <p class="text-xl text-zinc-600 mb-10">Book your consultation with Dr. Rajeswari at Crispr Eye Care, KK Nagar.</p>
+    
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:+916381302828" 
+         class="px-10 py-5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-2xl text-lg transition">
+        Call Now: +91 63813 02828
+      </a>
+      <a href="https://wa.me/916381302828" target="_blank"
+         class="px-10 py-5 border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50 font-semibold rounded-2xl text-lg transition flex items-center justify-center gap-3">
+        <i class="fab fa-whatsapp text-2xl"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Location -->
+<section class="py-16 bg-zinc-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold heading mb-8 text-center">Visit Our Clinic</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="font-semibold">Crispr Eye Care</p>
+        <p class="text-zinc-600">39/2, R K Shanmugam Salai,<br>KK Nagar, Chennai – 600078</p>
+        <div class="mt-6 space-y-2">
+          <p><strong>Phone / WhatsApp:</strong> +91 63813 02828</p>
+          <p><strong>Email:</strong> drrajeswarithangavel@gmail.com</p>
+          <p><strong>Timings:</strong> Mon – Sat | 10:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+      <div class="bg-zinc-200 h-80 rounded-3xl flex items-center justify-center text-zinc-500">
+        Google Maps Embed Here
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
