@@ -2,15 +2,20 @@
   "name": "crispr-eye-care",
   "version": "1.0.0",
   "type": "module",
-  "description": "Crispr Eye Care - Dr. Rajeswari Thangavel",
+  "description": "Crispr Eye Care - Dr. Rajeswari Thangavel, Ophthalmologist in KK Nagar, Chennai",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "build:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./src/assets/css/tailwind.css -o ./_site/assets/css/tailwind.css --watch",
+    "dev": "npm-run-all --parallel start watch:css",
+    "clean": "rm -rf _site"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "tailwindcss": "^3.4.0",
     "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
+    "autoprefixer": "^10.4.0",
+    "npm-run-all": "^4.1.5"
   }
 }
